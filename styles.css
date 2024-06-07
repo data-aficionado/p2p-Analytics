@@ -53,7 +53,7 @@ body {
 .container {
     width: 80%;
     max-width: 1200px;
-    margin: 140px auto 20px;
+    margin: 120px auto 20px;
     /* Adjusted margin to account for fixed header */
     text-align: center;
     background-color: #fff;
