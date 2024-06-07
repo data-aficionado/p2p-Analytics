@@ -65,7 +65,8 @@ body {
 .overview,
 .objectives,
 .methodology,
-.interactive-elements {
+.interactive-elements,
+.scripts-section {
     margin: 20px 0;
 }
 
