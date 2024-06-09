@@ -66,7 +66,8 @@ body {
 .objectives,
 .methodology,
 .interactive-elements,
-.scripts-section {
+.scripts-section,
+.results {
     margin: 20px 0;
 }
 
@@ -110,4 +111,30 @@ ol {
         right: 10px;
         padding: 8px 15px;
     }
+}
+
+.navigation-arrows {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navigation-arrows .left-arrow,
+.navigation-arrows .right-arrow {
+    font-size: 2em;
+    text-decoration: none;
+    color: #2c3e50;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 5px #666;
+    transition: all 0.3s ease;
+}
+
+.navigation-arrows .left-arrow:hover,
+.navigation-arrows .right-arrow:hover {
+    background-color: #34495e;
+    color: #fff;
+    box-shadow: 0 2px #666;
+    transform: translateY(3px);
 }
