@@ -4,6 +4,8 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
 }
 
 .header {
@@ -15,7 +17,7 @@ body {
 }
 
 .sankey-background {
-    background-image: url('sankey_diagram.png');
+    background-image: url('scripts/sankey_diagram.png');
     /* Ensure this path is correct */
     background-size: cover;
     background-repeat: no-repeat;
@@ -94,6 +96,10 @@ body {
     border: 2px solid #2c3e50;
     padding: 10px 20px;
     border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .explore-button:hover {
