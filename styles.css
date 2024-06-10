@@ -17,10 +17,6 @@ body {
 }
 
 .sankey-background {
-    background-image: url('scripts/sankey_diagram.png');
-    /* Ensure this path is correct */
-    background-size: cover;
-    background-repeat: no-repeat;
     padding: 20px 0;
     position: relative;
 }
@@ -72,14 +68,21 @@ body {
     z-index: 2;
 }
 
-.background-image {
+.background-container {
     width: 100%;
-    height: auto;
-    opacity: 0.2;
+    height: 600px;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
+    overflow: hidden;
+}
+
+.background-iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    opacity: 0.5;
 }
 
 .overlay {
@@ -107,29 +110,13 @@ body {
     background-color: #2c3e50;
 }
 
-.section {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-.section h2 {
-    color: #2c3e50;
-}
-
-.section p {
-    color: #34495e;
-}
-
 .footer {
     width: 100%;
     background-color: #fff;
     text-align: center;
     padding: 10px 0;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-    position: absolute;
+    position: relative;
     bottom: 0;
 }
 
