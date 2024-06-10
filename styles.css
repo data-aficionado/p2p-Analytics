@@ -91,7 +91,8 @@ body {
 }
 
 .grid-item {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Set transparency */
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
