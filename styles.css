@@ -17,6 +17,7 @@ body {
 
 .sankey-background {
     background-image: url('sankey_diagram.png');
+    /* Ensure this path is correct */
     background-size: cover;
     background-repeat: no-repeat;
     padding: 20px 0;
