@@ -1,27 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
-    let typewriterText = document.getElementById("typewriter");
+document.addEventListener('DOMContentLoaded', function () {
+    const typewriter = document.getElementById('typewriter');
     let text = "Explore!!";
     let index = 0;
-
     function type() {
-        if (index < text.length) {
-            typewriterText.innerHTML += text.charAt(index);
-            index++;
-            setTimeout(type, 200); // Adjust the typing speed here
-        } else {
-            setTimeout(erase, 2000); // Wait before starting to erase
+        typewriter.textContent = text.slice(0, index);
+        index++;
+        if (index > text.length) {
+            index = 0;
         }
     }
-
-    function erase() {
-        if (index > 0) {
-            typewriterText.innerHTML = text.substring(0, index - 1);
-            index--;
-            setTimeout(erase, 100); // Adjust the erasing speed here
-        } else {
-            setTimeout(type, 200); // Wait before starting to type again
-        }
-    }
-
-    type();
+    setInterval(type, 300);
 });
