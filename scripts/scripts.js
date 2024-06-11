@@ -1,13 +1,21 @@
 document.addEventListener('DOMContentLoaded', function () {
     const typewriter = document.getElementById('typewriter');
-    let text = "Explore!!";
-    let index = 0;
-    function type() {
-        typewriter.textContent = text.slice(0, index);
-        index++;
-        if (index > text.length) {
-            index = 0;
+    let i = 0;
+    const text = 'Explore!!';
+
+    function typeEffect() {
+        if (i < text.length) {
+            typewriter.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeEffect, 200);
+        } else {
+            setTimeout(() => {
+                typewriter.innerHTML = '';
+                i = 0;
+                typeEffect();
+            }, 1000);
         }
     }
-    setInterval(type, 300);
+
+    typeEffect();
 });
